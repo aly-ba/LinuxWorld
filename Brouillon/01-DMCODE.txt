@@ -1,0 +1,21 @@
+Informations matérielles sous linux
+dmidecode
+# dmidecode > /tmp/srvxxx_dmidecode.txt
+# dmidecode|wc –l
+1289
+# dmidecode –q|wc –l
+660
+bios
+system
+baseboard
+chassis
+processor
+memory
+cache
+connector
+slot
+# dmidecode –t bios
+# dmidecode –t 17|grep Size|awk '{{t+=$2}} END {{t=t/1024}print t" GB "}'
+# dmidecode --dump
+# dmidecode --dump-bin <Fichier>
+# dmidecode –from-dump <Fichier>
