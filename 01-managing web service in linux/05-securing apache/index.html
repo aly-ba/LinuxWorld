@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>TheUrbanPenguin</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+
+<div id='answer'> </div>
+<div id='content'>
+<hr>
+Welcome to theurbanpenguin test site<br>
+
+<script>
+if (window.location.protocol == "https:") {
+	document.getElementById('answer').innerHTML = "You are using SSL!"
+} else {
+	document.getElementById('answer').innerHTML = "<h1>You are NOT using SSL!</h1>"
+}
+</script>
+</div>
+</body>
+</html>
